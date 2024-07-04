@@ -110,7 +110,7 @@ deleteStudent = (index) => {
         // updateStudents(); // Cập nhật lại bảng
         alert("Đã xóa thành công!");
         showStudents(students);
-        displayStudents(currentPage);
+        displayStudents();
     }
 }
 
@@ -125,6 +125,7 @@ document.getElementById('search-btn').addEventListener('click', () => {
     const result = searchStudents(searchQuery);
 
     showStudents(result);
+    currentPage = 1;
     displayStudents(currentPage,result);
 });
 
@@ -318,11 +319,12 @@ document.getElementById('filter-btn').addEventListener('click', () => {
     });
 
     showStudents(filteredStudents);
+    currentPage = 1;
     displayStudents(currentPage,filteredStudents);
 });
 
 // Pagination
-function displayStudents(page, classList = students) {
+function displayStudents(page = 1, classList = students) {
     const startIndex = (page - 1) * studentsPerPage;
     const endIndex = startIndex + studentsPerPage;
     const studentsToDisplay = classList.slice(startIndex, endIndex);
