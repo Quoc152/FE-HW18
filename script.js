@@ -52,7 +52,7 @@ renderStudents = () => {
     displayStudents(currentPage);
     // students = [];
 }
-
+// Thêm sinh viên mới
 document.getElementById('studentForm').addEventListener('submit', (event) => {
     event.preventDefault();
 
@@ -74,6 +74,7 @@ document.getElementById('studentForm').addEventListener('submit', (event) => {
     document.getElementById('studentForm').reset();
 });
 
+// Cập nhật sinh viên
 submitUpdate = () => {
     const updatedName = document.getElementById('ten-upd').value;
     const updatedMssv = document.getElementById('mssv-upd').value;
@@ -100,6 +101,7 @@ submitUpdate = () => {
     currentStudentId = null;
 }
 
+// Xóa sinh viên
 deleteStudent = (index) => {
     // Hiển thị hộp thoại xác nhận
     const confirmation = window.confirm("Bạn có chắc chắn muốn xóa sinh viên này?");
@@ -107,18 +109,19 @@ deleteStudent = (index) => {
     // Nếu người dùng nhấn OK
     if (confirmation) {
         students.splice(index, 1); // Xóa sinh viên khỏi mảng
-        // updateStudents(); // Cập nhật lại bảng
         alert("Đã xóa thành công!");
         showStudents(students);
         displayStudents();
     }
 }
 
+// Hàm tìm kiếm sinh viên theo tên
 const searchStudents = (query) => {
     const normalizedQuery = query.toLowerCase();
     return students.filter(student => student.ten.toLowerCase().includes(normalizedQuery));
 };
 
+// Sự kiện click cho button Search
 document.getElementById('search-btn').addEventListener('click', () => {
     const searchQuery = document.getElementById('search-text').value;
     document.getElementById('search-text').value = "";
@@ -129,6 +132,7 @@ document.getElementById('search-btn').addEventListener('click', () => {
     displayStudents(currentPage,result);
 });
 
+// Hàm hiển thị danh sách sinh viên
 showStudents = (classList) => {
     const studentTableBody = document.getElementById('studentTableBody');
     studentTableBody.innerHTML = "";
@@ -195,6 +199,7 @@ showStudents = (classList) => {
     });
 }
 
+// Cập nhật Selection của Lớp theo selectedKhoa
 const updateLopSelects = (selectedKhoa, lopSelects) => {
     lopSelects.forEach(lopSelect => {
         while (lopSelect.firstChild) {
@@ -217,6 +222,7 @@ const updateLopSelects = (selectedKhoa, lopSelects) => {
     });
 };
 
+// Hàm cập nhật sự thay đổi của Selection Khoa
 const handleKhoaChange = () => {
     const khoaSelects = document.querySelectorAll('.khoa-sel');
     const lopSelects = document.querySelectorAll('.lop-sel');
@@ -233,12 +239,13 @@ const handleKhoaChange = () => {
     });
 };
 
+// Gọi sự kiện thay đổi của Selection Khoa 
 document.addEventListener('DOMContentLoaded', () => {
     handleKhoaChange();
 });
 
 
-// Hàm dùng cho bộ lọc
+// Hàm set selection của lớp dùng cho bộ lọc
 document.addEventListener('DOMContentLoaded', () => {
     const khoaSelectFilter = document.getElementById('khoa-fil');
     const lopSelectFilter = document.getElementById('lop-fil');
@@ -288,6 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// Thêm năm vào bộ lọc năm
 document.addEventListener('DOMContentLoaded', () => {
     const yearSelect = document.getElementById('namsinh-fil');
 
@@ -303,6 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
     selectedYear();
 })
 
+// Gán sự kiện click vào button Filter
 document.getElementById('filter-btn').addEventListener('click', () => {
     const khoaValue = document.getElementById('khoa-fil').value;
     const lopValue = document.getElementById('lop-fil').value;
@@ -323,14 +332,14 @@ document.getElementById('filter-btn').addEventListener('click', () => {
     displayStudents(currentPage,filteredStudents);
 });
 
-// Pagination
+// Pagination Phân trang
 function displayStudents(page = 1, classList = students) {
     const startIndex = (page - 1) * studentsPerPage;
     const endIndex = startIndex + studentsPerPage;
     const studentsToDisplay = classList.slice(startIndex, endIndex);
     currentClassList = classList;
 
-    showStudents(studentsToDisplay); // Giả sử showStudents là hàm để hiển thị danh sách sinh viên
+    showStudents(studentsToDisplay); 
     updatePagination(page, classList);
 }
 
