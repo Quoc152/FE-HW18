@@ -1,28 +1,28 @@
 let students = [
-    { id: 1, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 2, ten: "Nguyễn Văn B",lop: "21TDT3", mssv: 102232512, email: "b@gmail.com", khoa: "Fast", gioitinh: "Nam", ngaysinh: "2003-06-14" },
-    { id: 3, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 4, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 5, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 6, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 7, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 8, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 9, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 10, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 11, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 12, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 13, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 14, ten: "Nguyễn Văn B",lop: "21TDT3", mssv: 102232512, email: "b@gmail.com", khoa: "Fast", gioitinh: "Nam", ngaysinh: "2003-06-14" },
-    { id: 15, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 16, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 17, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 18, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 19, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 20, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 21, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 22, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 23, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
-    { id: 24, ten: "Nguyễn Văn A",lop: "21TDT3", mssv: 102234567, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" }
+    { id: 1, ten: "Nguyễn Văn A",lop: "CNTT1", mssv: 1000, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
+    { id: 2, ten: "Nguyễn Văn B",lop: "Fast1", mssv: 1001, email: "b@gmail.com", khoa: "Fast", gioitinh: "Nam", ngaysinh: "2003-06-14" },
+    { id: 3, ten: "Lê A",lop: "CNTT1", mssv: 1002, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
+    { id: 4, ten: "Nguyễn C",lop: "CNTT1", mssv: 1003, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
+    { id: 5, ten: "Phạm A",lop: "CNTT1", mssv: 1004, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
+    { id: 6, ten: "Trần Văn A",lop: "CNTT1", mssv: 1005, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
+    { id: 7, ten: "Hồ E",lop: "CNTT1", mssv: 1006, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
+    { id: 8, ten: "Lữ Văn A",lop: "CNTT1", mssv: 1007, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
+    { id: 9, ten: "Nguyễn Văn A",lop: "CNTT1", mssv: 1008, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
+    { id: 10, ten: "Nguyễn Văn A",lop: "CNTT1", mssv: 1009, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
+    { id: 11, ten: "Nguyễn Văn A",lop: "CNTT1", mssv: 1010, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
+    { id: 12, ten: "Nguyễn Văn A",lop: "CNTT1", mssv: 1011, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-06-03" },
+    { id: 13, ten: "Nguyễn Văn A",lop: "CNTT1", mssv: 1012, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-13" },
+    { id: 14, ten: "Nguyễn Văn B",lop: "Fast1", mssv: 1013, email: "b@gmail.com", khoa: "Fast", gioitinh: "Nam", ngaysinh: "2003-06-14" },
+    { id: 15, ten: "Nguyễn Văn A",lop: "CNTT1", mssv: 1014, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-12-03" },
+    { id: 16, ten: "Nguyễn Văn A",lop: "CNTT1", mssv: 1015, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
+    { id: 17, ten: "Nguyễn Văn A",lop: "CNTT1", mssv: 1016, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-05-03" },
+    { id: 18, ten: "Nguyễn Văn A",lop: "CNTT1", mssv: 1017, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
+    { id: 19, ten: "Nguyễn Văn A",lop: "CNTT1", mssv: 1018, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
+    { id: 20, ten: "Nguyễn Văn A",lop: "CNTT1", mssv: 1019, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-07-03" },
+    { id: 21, ten: "Nguyễn Văn A",lop: "CNTT1", mssv: 1020, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
+    { id: 22, ten: "Nguyễn Văn A",lop: "CNTT1", mssv: 1021, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
+    { id: 23, ten: "Nguyễn Văn A",lop: "CNTT1", mssv: 1022, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" },
+    { id: 24, ten: "Nguyễn Văn A",lop: "CNTT1", mssv: 1023, email: "a@gmail.com", khoa: "CNTT", gioitinh: "Nam", ngaysinh: "2003-02-03" }
 
 ];
 let currentStudentId = null;
@@ -30,7 +30,8 @@ let nextStudentId = 25;
 
 const studentsPerPage = 10;
 let currentPage = 1;
-const totalPages = Math.ceil(students.length / studentsPerPage);
+let currentClassList = students;
+let totalPages = Math.ceil(students.length / studentsPerPage);
 
 const lopOptions = {
     CNTT: ['CNTT1', 'CNTT2', 'CNTT3'],
@@ -66,8 +67,8 @@ document.getElementById('studentForm').addEventListener('submit', (event) => {
 
     students.push({id, ten, mssv, email, khoa, lop, gioitinh, ngaysinh });
 
-    // updateStudents();
     showStudents(students);
+    displayStudents(currentPage);
     alert("Đã thêm sinh viên thành công!");
     // Xóa giá trị các ô input sau khi thêm
     document.getElementById('studentForm').reset();
@@ -109,6 +110,7 @@ deleteStudent = (index) => {
         // updateStudents(); // Cập nhật lại bảng
         alert("Đã xóa thành công!");
         showStudents(students);
+        displayStudents(currentPage);
     }
 }
 
@@ -123,6 +125,7 @@ document.getElementById('search-btn').addEventListener('click', () => {
     const result = searchStudents(searchQuery);
 
     showStudents(result);
+    displayStudents(currentPage,result);
 });
 
 showStudents = (classList) => {
@@ -315,22 +318,26 @@ document.getElementById('filter-btn').addEventListener('click', () => {
     });
 
     showStudents(filteredStudents);
+    displayStudents(currentPage,filteredStudents);
 });
 
 // Pagination
-
-function displayStudents(page) {
+function displayStudents(page, classList = students) {
     const startIndex = (page - 1) * studentsPerPage;
     const endIndex = startIndex + studentsPerPage;
-    const studentsToDisplay = students.slice(startIndex, endIndex);
+    const studentsToDisplay = classList.slice(startIndex, endIndex);
+    currentClassList = classList;
 
-    showStudents(studentsToDisplay); // Assuming showStudents is your function to display the student list
-    updatePagination(page);
+    showStudents(studentsToDisplay); // Giả sử showStudents là hàm để hiển thị danh sách sinh viên
+    updatePagination(page, classList);
 }
 
-function updatePagination(page) {
+// Hàm cập nhật phân trang
+function updatePagination(page, classList) {
     const paginationDiv = document.getElementById('page-numbers');
     paginationDiv.innerHTML = '';
+
+    totalPages = Math.ceil(classList.length / studentsPerPage);
 
     for (let i = 1; i <= totalPages; i++) {
         const pageBtn = document.createElement('button');
@@ -339,7 +346,7 @@ function updatePagination(page) {
         if (i === page) {
             pageBtn.classList.add('active-page');
         }
-        pageBtn.addEventListener('click', () => displayStudents(i));
+        pageBtn.addEventListener('click', () => displayStudents(i, classList));
         paginationDiv.appendChild(pageBtn);
     }
 
@@ -366,14 +373,14 @@ function updatePagination(page) {
 document.getElementById('prev-btn').addEventListener('click', () => {
     if (currentPage > 1) {
         currentPage--;
-        displayStudents(currentPage);
+        displayStudents(currentPage,currentClassList);
     }
 });
 
 document.getElementById('next-btn').addEventListener('click', () => {
     if (currentPage < totalPages) {
         currentPage++;
-        displayStudents(currentPage);
+        displayStudents(currentPage,currentClassList);
     }
 });
 
